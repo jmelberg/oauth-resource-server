@@ -63,7 +63,13 @@ var argv = yargs
 ```
 
 ## Run the Server
-Simply run the server in the root project folder with the following command:
+First, run the server in the root project folder with the following command:
 ```
 node server.js
 ```
+### Next, make the server available via HTTPS with [ngrok](https://ngrok.com/).
+
+Assuming that your example code is listening on
+`http://localhost:9000`, start ngrok with the following command:
+
+    ngrok http 9000
